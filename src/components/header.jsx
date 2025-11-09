@@ -82,7 +82,7 @@ const Header = () => {
             <div className="hidden sm:flex items-center gap-3 text-base">
               <a href="#" className="hover:text-blue-400">Citizen</a>
               <span className="opacity-50">|</span>
-              <a href="#" className="hover:text-blue-400">Authority</a>
+              <Link to='/authority' href="#" className="hover:text-blue-400">Authority</Link>
             </div>
 
             <div className="relative">

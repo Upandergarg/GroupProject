@@ -17,6 +17,10 @@ import Deeds from './components/Leftworks/goodDeeds.jsx'
 import Mental from './components/Leftworks/mental.jsx'
 import Women from './components/Leftworks/Women.jsx'
 import Feed from './components/feed.jsx'
+import AuthorityLayout from './Authority/home1.jsx'
+import { GlobalProvider } from "./components/context/GlobalContext.jsx";
+
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -36,6 +40,10 @@ const router = createBrowserRouter(
         <Route path='Narii' element={<Women />} />
       </Route>
      
+     {/* 🏛️ Authority Panel Routes */}
+      <Route path='/authority' element={<AuthorityLayout />}>
+       
+      </Route>
      
       </>
     
@@ -44,6 +52,8 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+   <GlobalProvider>
+      <RouterProvider router={router} />
+    </GlobalProvider>
   </React.StrictMode>,
 )
