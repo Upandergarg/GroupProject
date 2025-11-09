@@ -16,13 +16,14 @@ import Complaint from './components/Leftworks/complaint.jsx'
 import Deeds from './components/Leftworks/goodDeeds.jsx'
 import Mental from './components/Leftworks/mental.jsx'
 import Women from './components/Leftworks/Women.jsx'
-
+import Feed from './components/feed.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
      
       
       <Route path='/' element={<Layout />}>
+      <Route index element={<Feed />} />
        <Route path='/contact' element={<Contact />} />
       <Route path='/about' element={<About />} />
         <Route path='AURAAA' element={<Aura />} />

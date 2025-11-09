@@ -62,7 +62,7 @@ const Header = () => {
               </span>
             </a>
             <ul className="hidden md:flex items-center gap-6 text-base">
-              <li><Link to='Layout' className="hover:text-blue-400" href="#">Home</Link></li>
+              <li><Link to='/' className="hover:text-blue-400" href="#">Home</Link></li>
               <li><Link to='contact' className="hover:text-blue-400" href="#">Contact Us</Link></li>
               <li><Link to='about' className="hover:text-blue-400" href="#">About Us</Link></li>
               <li className="relative">
